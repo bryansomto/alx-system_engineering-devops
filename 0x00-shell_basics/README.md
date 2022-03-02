@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Bash scripts
 **Bash terminal required**
 
@@ -29,7 +28,3 @@ Execute from terminal with `bash 5-listfilesdigitonly`
 ## 6-firstdirectory
 A script that creates a directory named my_first_directory in the /tmp/ directory.
 Execute from terminal with `bash 6-firstdirectory`
-=======
-# alx-system_engineering-devops
-This repo contains some basic bash scripts
->>>>>>> 074e85942c2d253513c61d3234a1e2c6c8570b50
