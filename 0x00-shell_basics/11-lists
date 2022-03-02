@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la $PWD $PWD/.. c:/windows/boot
+ls -la pwd pwd/.. c:/windows/boot
