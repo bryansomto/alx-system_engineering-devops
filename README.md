@@ -1,2 +1,1 @@
-# alx-system_engineering-devops
-This repo contains some basic bash scripts
+## 0x07. Networking basics #0
