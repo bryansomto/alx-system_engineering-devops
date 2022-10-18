@@ -6,15 +6,17 @@ about his/her TODO list progress.
 """
 import requests
 import sys
+import csv
 
 if __name__ == "__main__":
     api_url = "https://jsonplaceholder.typicode.com/"
-    response = requests.get(api_url + "users/{}".format(sys.argv[1])).json()
+    user = requests.get(api_url + "users/{}".format(sys.argv[1])).json()
+    username = user.get("username")
     todos = requests.get(
         api_url + "todos", params={"userId": sys.argv[1]}).json()
 
-    with open("{}.csv".format(user_id), "w", newline="") as csvfile:
+    with open("{}.csv".format(sys.argv[1]), "w", newline="") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         [writer.writerow(
-            [user_id, username, t.get("completed"), t.get("title")]
+            [sys.argv[1], username, t.get("completed"), t.get("title")]
         ) for t in todos]
