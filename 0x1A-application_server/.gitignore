@@ -1,2 +1,3 @@
 # ignore file transfer script
 0-transfer_file
+__pycache__/
