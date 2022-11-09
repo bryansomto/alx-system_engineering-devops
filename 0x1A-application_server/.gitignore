@@ -1,5 +1,4 @@
-# ignore file transfer script
-0-transfer_file
-
-# ignore python cache files
+AirBnB_clone_v2/
+AirBnB_clone_v3/
+env/
 __pycache__/
